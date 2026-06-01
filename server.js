@@ -31,7 +31,7 @@ function saveMessages(messages) {
   fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2));
 }
 
- endpoint
+// Health check endpoint
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'ok',
